@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Atelier José Pedro Lima</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #ffffff;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      color: #000;
+    }
+
+    /* Top-left title */
+    .top-left {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      font-weight: bold;
+      font-size: 20px;
+      letter-spacing: 0.5px;
+    }
+
+    /* Centered image with equal margins (desktop) */
+    .image-container {
+      width: 100%;
+      text-align: center;
+      margin-top: 140px;
+      margin-bottom: 140px;
+    }
+
+    img {
+      width: 45%;   /* tamanho perfeito no desktop */
+      height: auto;
+      display: inline-block;
+    }
+
+    /* Bottom-left and bottom-right info */
+    .bottom-left {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      font-size: 14px;
+      letter-spacing: 0.3px;
+    }
+
+    .bottom-right {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      font-size: 14px;
+      letter-spacing: 0.3px;
+    }
+
+    /* MOBILE VERSION */
+    @media (max-width: 768px) {
+
+      .top-left {
+        font-size: 16px;
+        top: 15px;
+        left: 15px;
+      }
+
+      /* Center image vertically on mobile */
+      .image-container {
+        margin-top: 0;
+        margin-bottom: 0;
+        min-height: calc(100vh - 180px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      img {
+        width: 110%; /* imagem maior no telemóvel */
+      }
+
+      .bottom-left,
+      .bottom-right {
+        font-size: 12px;
+        bottom: 15px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="top-left">
+    Atelier José Pedro Lima
+  </div>
+
+  <div class="image-container">
+    <img src="FTA_JPL_ALF_20260406_04.JPEG" alt="Atelier José Pedro Lima">
+  </div>
+
+  <div class="bottom-left">
+    Coimbra, Portugal
+  </div>
+
+  <div class="bottom-right">
+    office.josepedrolima@gmail.com
+  </div>
+
+</body>
+</html>
