@@ -7,12 +7,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Atelier José Pedro Lima</title>
+
+  <!-- FONTES BROCKMANN -->
+  <style>
+    @font-face {
+      font-family: "Brockmann";
+      src: url("fonts/Brockmann-Medium.otf") format("opentype");
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: "Brockmann";
+      src: url("fonts/Brockmann-SemiBold.otf") format("opentype");
+      font-weight: 700; /* Bold, mesmo que o ficheiro se chame SemiBold */
+      font-style: normal;
+    }
+  </style>
+
   <style>
     body {
       margin: 0;
       padding: 0;
       background: #ffffff;
-      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-family: "Brockmann", sans-serif;
+      font-weight: 400; /* Medium */
       color: #000;
     }
 
@@ -21,8 +40,9 @@
       position: fixed;
       top: 20px;
       left: 20px;
-      font-weight: bold;
-      font-size: 20px;
+      font-family: "Brockmann", sans-serif;
+      font-weight: 700; /* Bold */
+      font-size: 30px; /* 1.5x */
       letter-spacing: 0.5px;
     }
 
@@ -45,7 +65,9 @@
       position: fixed;
       bottom: 20px;
       left: 20px;
-      font-size: 14px;
+      font-family: "Brockmann", sans-serif;
+      font-weight: 400; /* Medium */
+      font-size: 21px; /* 1.5x */
       letter-spacing: 0.3px;
     }
 
@@ -53,7 +75,9 @@
       position: fixed;
       bottom: 20px;
       right: 20px;
-      font-size: 14px;
+      font-family: "Brockmann", sans-serif;
+      font-weight: 400; /* Medium */
+      font-size: 21px; /* 1.5x */
       letter-spacing: 0.3px;
     }
 
@@ -64,6 +88,7 @@
         font-size: 16px;
         top: 15px;
         left: 15px;
+        font-weight: 700; /* Bold */
       }
 
       /* Center image vertically on mobile */
@@ -84,6 +109,7 @@
       .bottom-right {
         font-size: 12px;
         bottom: 15px;
+        font-weight: 400; /* Medium */
       }
     }
   </style>
